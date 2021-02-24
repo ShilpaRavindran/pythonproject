@@ -2,7 +2,8 @@ import datetime
 
 class Bank:
     b_name="sbi"
-    def create_account(self,accno,c_name,balance):
+    #def create_account(self,accno,c_name,balance):
+    def __init__(self, accno, c_name, balance):
         self.accno=accno
         #self.bank_name=bank_name
         self.c_name=c_name
@@ -22,7 +23,8 @@ class Bank:
         def balance_enq(self):
             print(self.balance)
 
-obj=Bank()
-obj.create_account(11001122,"Anu",500)
+#obj=Bank()
+obj=Bank(11001122,"Anu",500)
+#obj.create_account(11001122,"Anu",500)
 obj.deposit(1000)
 obj.withdraw(400)
