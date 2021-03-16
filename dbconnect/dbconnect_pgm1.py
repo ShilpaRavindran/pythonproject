@@ -6,7 +6,7 @@ db=mysql.connector.connect(
 
 )
 #curserobject
-cursor=db.curser()
+cursor=db.cursor()
 sql="select version()"
 cursor.execute(sql)
 data=cursor.fetchone()
